@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="XmlDocCommentHighPriorityClassifier.Nick Halvorsen.90ae8df3-d154-4507-9e84-d7120c957822" Version="1.0" Language="en-US" Publisher="Nick Halvorsen" />
+    <DisplayName>XmlDocCommentHighPriorityClassifier</DisplayName>
+    <Description xml:space="preserve">Adds editor classification "Xml Doc Comments (high priority)". Colors everything within the XML Doc comments (default option uses different colors for type names and more within the comment)</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+  </Assets>
+</PackageManifest>
