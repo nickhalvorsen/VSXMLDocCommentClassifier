@@ -61,7 +61,7 @@ namespace XmlDocCommentHighPriorityClassifier
 
             var lineText = span.GetText();
 
-            if (lineText.Contains("/// "))
+            if (lineText.TrimStart().StartsWith("/// "))
             {
                 result.Add(new ClassificationSpan(new SnapshotSpan(span.Snapshot, new Span(span.Start, span.Length)), this.classificationType));
             }
